@@ -1,0 +1,17 @@
+.header-logo_link{
+    display: block;
+
+    img{
+        max-width: 383px;
+        height: auto;
+    }
+}
+
+
+@media screen and (max-width: 420px){
+    .header-logo_link{
+        img{
+        max-width: 250px;
+        }
+    }
+}
