@@ -23,7 +23,9 @@ function FooterInner(){
               alt="Logo Studio Rewind"
               className="logo-footer"
             />
-            <button className="btn btn-primary">Réserver un créneau</button>
+            <Link className="footer-nav_link" to="/reservation">
+              <button className="btn btn-primary">Réserver un créneau</button>
+            </Link>
           </div>
 
           <div className="footer-separator" />

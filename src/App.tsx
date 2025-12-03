@@ -1,35 +1,24 @@
 import { Routes, Route } from 'react-router-dom';
+import './App.css'
+import Home from './pages/Home'
+import Team from './pages/Team'
+import Booked from './pages/Booked'
+import Layout from "./components/Layout/Layout";
 
-import Header from './components/Header';
-import Footer from './components/Footer';
-
-import Home from './pages/Home';
-import Team from './pages/team';
-import Contact from './pages/contact';
-import AboutUs from './pages/about-us';
-import Tarifs from './pages/nos-tarifs';
 
 function App() {
+
   return (
     <>
-      <Header />
-
-      <main>
-        <Routes>
-          {/* Page d’accueil */}
+     <Routes>
+        <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
-
-          {/* Page Team */}
-          <Route path="/team" element={<Team />} />
-          <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/nos-tarifs" element={<Tarifs />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </main>
-
-      <Footer />
+          <Route path="/equipe" element={<Team />} />
+        </Route>
+        <Route path="/reservation" element={<Booked />} />
+      </Routes>
     </>
-  );
+  )
 }
 
-export default App;
+export default App

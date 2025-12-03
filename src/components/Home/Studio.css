@@ -1,0 +1,68 @@
+.studio {
+  padding: 1rem 1.5rem 4rem;
+}
+
+.subtitle {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.studio_text {
+  max-width: 2000px;
+  margin: 0 auto;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #222;
+}
+
+.studio_text::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.studio_img {
+  margin: 0;
+}
+
+.studio_img img {
+  display: block;
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 24px 50px rgba(0,0,0,0.25);
+}
+
+.studio_img-main--left {
+  float: left;
+  width: 45%;
+  margin: 0 2rem 2rem 0;
+}
+
+.studio_img-secondary--right {
+  float: right;
+  width: 40%;
+  margin: 1rem 0 1.5rem 2rem;
+}
+
+.studio_text{
+    text-align: justify;
+}
+
+.studio_text p + p {
+  margin-top: 1.5rem;
+}
+
+
+@media (max-width: 650px) {
+  .studio_img-main--left,
+  .studio_img-secondary--right {
+    float: none;
+    width: 100%;
+    margin: 0 0 1.5rem 0;
+  }
+
+  .studio_text {
+    font-size: 0.95rem;
+    text-align: justify;
+  }
+}

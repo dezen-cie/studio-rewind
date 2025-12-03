@@ -1,7 +1,0 @@
-@import url('../styles/index.css');
-
-.footer{
-  background-color: var(--background);
-  color: #ffffff;
-  padding-top: 2rem;
-}
