@@ -1,5 +1,5 @@
 // Layout.tsx
-import { Outlet, useLocation } from 'react-router-dom'
+import { Link, Outlet, useLocation } from 'react-router-dom'
 import type { ReactNode } from 'react'
 import { MoveRight } from 'lucide-react';
 import './Layout.css'
@@ -21,12 +21,14 @@ export default function Layout() {
             <p>
               Créez. Enregistrez. Rayonnez
             </p>
-            <button 
-              type="button" 
-              className="btn btn-primary">
-              Réserver un créneau  
-              <MoveRight />
-            </button>
+            <Link className="" to="/reservation">
+              <button 
+                type="button" 
+                className="btn btn-primary">
+                Réserver un créneau  
+                  <MoveRight />
+              </button>
+            </Link>
           </div>
 
           
@@ -42,12 +44,14 @@ export default function Layout() {
             <p className="p-header">
               Pendant le tournage, vous êtes accompagné par un intervenant habitué à l’exercice caméra. Il sait mettre à l’aise, poser les bonnes questions, relancer la conversation et vous aider à exprimer exactement ce que vous souhaitez transmettre. Une fois vos prises capturées, notre monteur transforme le tout en un contenu propre, dynamique et directement exploitable pour vos réseaux ou votre communication. Ici, chaque membre de l’équipe est là pour vous aider à donner le meilleur de vous-même. Cette page vous permet de découvrir ceux qui seront à vos côtés lors de votre passage au studio.
             </p>
-            <button 
-              type="button" 
-              className="btn btn-primary">
-              Réserver un créneau  
-              <MoveRight />
-            </button>
+            <Link className="" to="/reservation">
+              <button 
+                type="button" 
+                className="btn btn-primary">
+                Réserver un créneau  
+                <MoveRight />
+              </button>
+            </Link>
           </div>
         </>
       )
