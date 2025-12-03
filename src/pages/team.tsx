@@ -3,7 +3,7 @@ import './Team.css'
 function Team() {
   return (
     <main className="team">
-       <section className="podcast-members">
+       <section className="podcast-members test">
         <h2 className="team-title">Les podcasteurs</h2>
         <div className="members">
          <div className="team-member">
